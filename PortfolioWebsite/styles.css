@@ -1,3 +1,7 @@
+* {
+    font-family: 'Calibri Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .box {
     /* max-width: 700px; */
     max-width: 40%;
@@ -21,15 +25,26 @@
     /* justify-content: space-evenly; */
 }
 
-.font {
-    font-family: 'Calibri Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 #header {
     padding-top: 0.3%;
-    padding-left: 5%;
 }
 
 .img {
     max-width: 100%;
+}
+
+.left-padding {
+    padding-left: 5%;
+}
+
+#nav {
+    display: flex;
+    /* padding: 0; */
+    /* margin: 0; */
+    /* align-items: center; */
+}
+
+#nav li {
+    padding: 1%;
+    text-decoration: none;
 }
