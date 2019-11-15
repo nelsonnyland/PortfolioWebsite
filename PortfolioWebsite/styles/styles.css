@@ -1,0 +1,76 @@
+* {
+    font-family: 'Calibri Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.article {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.box {
+    /* max-width: 700px; */
+    max-width: 40%;
+    padding: 5%;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#contact {
+    padding-left: 5%;
+    list-style-type: none;
+    line-height: 2em;
+    font-weight: bold;
+}
+
+#contact a {
+    color: black;
+    text-decoration: none;
+}
+
+.figcaption {
+    padding-bottom: 2%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-flow: wrap; */
+    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+}
+
+#header {
+    padding-top: 0.3%;
+    padding-left: 5%;
+    font-size: 1.3em;
+}
+
+.img {
+    max-width: 100%;
+}
+
+
+#nav {
+    display: flex;
+    padding-left: 5%;
+    list-style-type: none;
+    align-content: space-around;
+    /* overflow: hidden; */
+}
+
+#nav li {
+    padding: 0.3%;
+    margin-right: 0.2%;
+    background-color: #737373;
+    border-radius: 10%;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
