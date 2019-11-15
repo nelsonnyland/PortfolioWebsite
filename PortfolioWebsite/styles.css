@@ -15,6 +15,7 @@
 .figcaption {
     padding-bottom: 2%;
     font-size: 1.5em;
+    font-weight: bold;
 }
 
 .flex-container {
@@ -27,24 +28,32 @@
 
 #header {
     padding-top: 0.3%;
+    padding-left: 5%;
+    font-size: 1.3em;
 }
 
 .img {
     max-width: 100%;
 }
 
-.left-padding {
-    padding-left: 5%;
-}
 
 #nav {
     display: flex;
-    /* padding: 0; */
-    /* margin: 0; */
-    /* align-items: center; */
+    padding-left: 5%;
+    list-style-type: none;
+    align-content: space-around;
+    /* overflow: hidden; */
 }
 
 #nav li {
-    padding: 1%;
+    padding: 0.3%;
+    margin-right: 0.2%;
+    background-color: #737373;
+    border-radius: 10%;
+}
+
+#nav a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
