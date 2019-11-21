@@ -1,4 +1,4 @@
 [[headers]]
-  for = "/*"
+  for = "https://api.github.com/users/nelsonnyland/events/public"
   [headers.values]
-    TOKEN = ""
+    Authorization = ""
