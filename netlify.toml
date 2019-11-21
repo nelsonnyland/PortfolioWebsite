@@ -1,0 +1,5 @@
+[context.production]
+    environment = { 
+        TOKEN = "TOKEN",
+        PRODUCTION = "PRODUCTION" 
+    }

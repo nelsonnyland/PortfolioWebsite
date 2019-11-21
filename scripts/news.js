@@ -14,8 +14,8 @@ const feedsURL = "https://api.github.com/feeds";
 const profileURL = "https://api.github.com/users/nelsonnyland";
 const activitiesURL = "https://api.github.com/users/nelsonnyland/events/public";
 
-let TOKEN = "";
-let PRODUCTION = "false";
+let TOKEN = $("TOKEN");
+let PRODUCTION = $("PRODUCTION");
 
 // function $(id) {
 //     return document.getElementById(id);
