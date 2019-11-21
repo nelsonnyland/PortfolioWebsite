@@ -14,7 +14,7 @@ const feedsURL = "https://api.github.com/feeds";
 const profileURL = "https://api.github.com/users/nelsonnyland";
 const activitiesURL = "https://api.github.com/users/nelsonnyland/events/public";
 
-let TOKEN = "";
+//let TOKEN = "";
 let PRODUCTION = "false";
 
 // function $(id) {
@@ -22,11 +22,11 @@ let PRODUCTION = "false";
 // }
 
 // if PRODUCTION is false
-async function getToken() {
-    let baseURL = window.location.origin;
-    let response = await fetch(baseURL + "/token.txt");
-    TOKEN = await response.text();
-}
+// async function getToken() {
+//     let baseURL = window.location.origin;
+//     let response = await fetch(baseURL + "/token.txt");
+//     TOKEN = await response.text();
+// }
 
 // fetch api data
 async function getData(url) {

@@ -1,2 +1,4 @@
-[context.production]
-    environment = { TOKEN = "TOKEN", PRODUCTION = "PRODUCTION" }
+[[headers]]
+  for = "/*"
+  [headers.values]
+    TOKEN = ""
