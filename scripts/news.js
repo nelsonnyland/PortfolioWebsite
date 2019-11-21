@@ -14,8 +14,6 @@ const feedsURL = "https://api.github.com/feeds";
 const profileURL = "https://api.github.com/users/nelsonnyland";
 const activitiesURL = "https://api.github.com/users/nelsonnyland/events/public";
 
-let TOKEN = netlify.Authorization;
-
 // function $(id) {
 //     return document.getElementById(id);
 // }
@@ -32,7 +30,7 @@ async function getData(url) {
     let response = await fetch(url, {
         "method" : "GET",
         "headers" : {
-            "Authorization" : "token " + TOKEN
+            "Authorization" : process.env.TOKEN
         }
     });
     let data = await response.json();
