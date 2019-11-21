@@ -30,7 +30,7 @@ async function getData(url) {
     let response = await fetch(url, {
         "method" : "GET",
         "headers" : {
-            "Authorization" : process.env.TOKEN
+            "Authorization" : `${process.env.TOKEN}`
         }
     });
     let data = await response.json();
