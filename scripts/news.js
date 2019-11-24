@@ -14,17 +14,6 @@ const feedsURL = "https://api.github.com/feeds";
 const profileURL = "https://api.github.com/users/nelsonnyland";
 const activitiesURL = "https://api.github.com/users/nelsonnyland/events/public";
 
-// function $(id) {
-//     return document.getElementById(id);
-// }
-
-// if PRODUCTION is false
-// async function getToken() {
-//     let baseURL = window.location.origin;
-//     let response = await fetch(baseURL + "/token.txt");
-//     TOKEN = await response.text();
-// }
-
 // fetch api data
 async function getData(url) {
     let response = await fetch(url, {
