@@ -73,12 +73,6 @@
     /* font-weight: bold; */
 }
 
-.news {
-    padding-left: 5%;
-    padding-right: 5%;
-    list-style-type: none;
-}
-
 @media only screen and (max-width: 777px) {
     .box {
         padding: 3%;
