@@ -1,11 +1,23 @@
 
-// display data to newsfeed
-function postNews(data) {
-    let article = document.getElementById("article");
-    for (item of data) {
-        article.appendChild(document.createTextNode(item.login));
-        article.appendChild(document.createElement("br"));
+const request = require("request");
+
+const options = {
+    url: "https://api.github.com/users/nelsonnyland/events/public",
+    headers: {
+        "User-Agent": "request",
+        "Authorization": ""
     }
-    //article.appendChild(document.createTextNode(JSON.stringify(data)));
+};
+
+function callback(error, response, body) {
+    if (!error && response.statusCode == 200) {
+        const data = JSON.parse(body);
+        console.log(data);
+    } else {
+        console.log("ERROR" + error);
+        console.log("RESPONSE" + response);
+        console.log("BODY" + body);
+    }
 }
 
+request(options, callback);

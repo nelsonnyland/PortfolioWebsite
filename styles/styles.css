@@ -2,11 +2,6 @@
     font-family: 'Calibri Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.article {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
 .box {
     /* max-width: 700px; */
     max-width: 40%;
@@ -76,6 +71,12 @@
     color: white;
     text-decoration: none;
     /* font-weight: bold; */
+}
+
+.news {
+    padding-left: 5%;
+    padding-right: 5%;
+    list-style-type: none;
 }
 
 @media only screen and (max-width: 777px) {
