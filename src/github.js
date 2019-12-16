@@ -1,13 +1,16 @@
 const request = require("request");
-const news = require("./news.js");
 
 const options = {
     url: "https://api.github.com/users/nelsonnyland/events/public",
     headers: {
         "User-Agent": "request",
-        "Authorization": ""
+        "Authorization": "TOKEN"
     }
 };
+
+const getNews = () => {
+    request(options, callback);
+}
 
 function callback(error, response, body) {
     if (!error && response.statusCode == 200) {
@@ -21,4 +24,6 @@ function callback(error, response, body) {
     }
 }
 
-request(options, callback);
+module.exports = {
+    getNews: getNews
+}

@@ -2,10 +2,17 @@
     font-family: 'Calibri Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.article {
+    padding-left: 6%;	
+    padding-right: 6%;
+    font-size: 1.5em;
+}
+
 .box {
     /* max-width: 700px; */
     max-width: 40%;
-    padding: 5%; /* 5% */
+    padding: 5%;
+    padding-top: 2%;
     /* margin-top: 2%; */
     /* margin-bottom: 3%; */
 }
@@ -26,9 +33,15 @@
     text-decoration: none;
 }
 
+#error {
+    padding: 10%;
+    font-size: 3em;
+    text-align: center;
+}
+
 .figcaption {
     padding-bottom: 2%;
-    font-size: 1.8em;
+    font-size: 1.7em;
     font-weight: bold;
 }
 
@@ -41,7 +54,7 @@
     /* padding-left: 5%; */
 }
 
-#header {
+.header {
     padding-top: 0.3%;
     padding-left: 5%;
     font-size: 1.3em;
@@ -52,7 +65,7 @@
 }
 
 
-#nav {
+.nav {
     display: flex;
     padding-left: 5%;
     list-style-type: none;
@@ -60,14 +73,14 @@
     /* overflow: hidden; */
 }
 
-#nav li {
+.nav li {
     padding: 0.3em; /* 0.3% */
     margin-right: 0.3em; /* 0.2% */
     background-color: #737373;
     border-radius: 10%;
 }
 
-#nav a {
+.nav a {
     color: white;
     text-decoration: none;
     /* font-weight: bold; */

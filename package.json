@@ -1,0 +1,25 @@
+{
+  "name": "PortfolioWebsite",
+  "version": "1.0.0",
+  "description": "A website for showing my work.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nelsonnyland/PortfolioWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nelsonnyland/PortfolioWebsite/issues"
+  },
+  "homepage": "https://github.com/nelsonnyland/PortfolioWebsite#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.0.6",
+    "request": "^2.88.0"
+  }
+}
