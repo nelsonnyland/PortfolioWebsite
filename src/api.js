@@ -1,22 +1,32 @@
 const request = require("request");
+debugger
+const authorization = {
+    "User-Agent": "request",
+    "Authorization": "${process.env.TOKEN}"
+};
 
-const options = {
+const repoOpt = {
+    url: "?",
+    headers: authorization
+};
+
+const newsOpt = {
     url: "https://api.github.com/users/nelsonnyland/events/public",
-    headers: {
-        "User-Agent": "request",
-        "Authorization": "TOKEN"
-    }
+    headers: authorization
 };
 
 const getNews = () => {
-    request(options, callback);
-}
+    return request(newsOpt, callback);
+};
+
+const getRepos = () => {
+    return request(repoOpt, callback);
+};
 
 function callback(error, response, body) {
     if (!error && response.statusCode == 200) {
         const data = JSON.parse(body);
-        console.log(data);
-        news.postNews(data);
+        return data;
     } else {
         console.log("ERROR" + error);
         console.log("RESPONSE" + response);
@@ -25,5 +35,6 @@ function callback(error, response, body) {
 }
 
 module.exports = {
+    getRepos: getRepos,
     getNews: getNews
 }

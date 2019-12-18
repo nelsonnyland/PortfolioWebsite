@@ -1,8 +1,9 @@
+require("dotenv").config();
 const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
 
-//const github = require("./github.js");
+const api = require("./api.js");
 
 const app = express();
 
@@ -19,10 +20,12 @@ hbs.registerPartials(partDir);
 app.use(express.static(pubDir));
 
 app.get("", (req, res) => {
+    //const repos = api.getRepos();
     res.render("index");
 });
 
 app.get("/news", (req, res) => {
+    const news = api.getNews();
     res.render("news");
 });
 
