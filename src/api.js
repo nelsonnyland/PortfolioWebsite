@@ -1,12 +1,12 @@
 const request = require("request");
-debugger
+
 const authorization = {
     "User-Agent": "request",
-    "Authorization": "${process.env.TOKEN}"
+    "Authorization": `TOKEN ${process.env.TOKEN}`
 };
 
 const repoOpt = {
-    url: "?",
+    url: "https://api.github.com/users/nelsonnyland",
     headers: authorization
 };
 
@@ -15,24 +15,29 @@ const newsOpt = {
     headers: authorization
 };
 
-const getNews = () => {
-    return request(newsOpt, callback);
-};
+//#region old api code
+// const getNews = () => {
+//     return request(newsOpt, callback);
+// };
 
-const getRepos = () => {
-    return request(repoOpt, callback);
-};
+// const getRepos = () => {
+//     return request(repoOpt, callback);
+// };
 
-function callback(error, response, body) {
-    if (!error && response.statusCode == 200) {
-        const data = JSON.parse(body);
-        return data;
-    } else {
-        console.log("ERROR" + error);
-        console.log("RESPONSE" + response);
-        console.log("BODY" + body);
-    }
-}
+// function callback(error, response, body) {
+//     if (!error && response.statusCode == 200) {
+//         const data = JSON.parse(body);
+//         console.log("DATA: " + JSON.stringify(data));
+//         return data;
+//     } else {
+//         console.log("ERROR" + error);
+//         console.log("RESPONSE" + response);
+//         console.log("BODY" + body);
+//     }
+// }
+//#endregion
+
+
 
 module.exports = {
     getRepos: getRepos,

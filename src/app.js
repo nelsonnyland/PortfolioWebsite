@@ -1,4 +1,5 @@
 require("dotenv").config();
+
 const path = require("path");
 const express = require("express");
 const hbs = require("hbs");
@@ -25,8 +26,9 @@ app.get("", (req, res) => {
 });
 
 app.get("/news", (req, res) => {
-    const news = api.getNews();
-    res.render("news");
+    //const news = api.getNews();
+    //res.render("news");
+
 });
 
 app.get("/contact", (req, res) => {
