@@ -1,2 +1,3 @@
-# PortfolioWebsite
-A website for showing my work.
+![](public/img/portfolio.jpg)
+
+### A NodeJS website for showing my projects.
