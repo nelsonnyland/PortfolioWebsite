@@ -1,3 +1,3 @@
-![https://nelsonnyland.netlify.com/](public/img/portfolio.jpg)
+[![PortfolioWebsite Image](public/img/portfolio.jpg)](https://nelsonnyland.netlify.com/)
 
 ### A NodeJS website for showing my projects.
