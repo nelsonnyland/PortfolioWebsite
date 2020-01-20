@@ -5,8 +5,6 @@ const express = require("express");
 const hbs = require("hbs");
 const request = require("request");
 
-//const api = require("./api.js");
-
 const app = express();
 
 const pubDir = path.join(__dirname, "../public");
@@ -21,51 +19,12 @@ hbs.registerPartials(partDir);
 
 app.use(express.static(pubDir));
 
-const authorization = {
-    "User-Agent": "request",
-    "Authorization": `TOKEN ${process.env.TOKEN}`
-};
-
 app.get("", (req, res) => {
-    const options = {
-        url: "https://api.github.com/users/nelsonnyland/repos",
-        headers: authorization
-    };
-    
-    request(options, callback);
-
-    function callback(error, response, body) {
-        if (!error && response.statusCode == 200) {
-            const data = JSON.parse(body);
-            //console.log("DATA: " + JSON.stringify(data));
-            res.send(data);
-        } else {
-            console.log("ERROR" + error);
-            console.log("RESPONSE" + response);
-            console.log("BODY" + body);
-        }
-    }
+    res.render("index");
 });
 
 app.get("/news", (req, res) => {
-    const options = {
-        url: "https://api.github.com/users/nelsonnyland/events/public",
-        headers: authorization
-    };
-    
-    request(options, callback);
-
-    function callback(error, response, body) {
-        if (!error && response.statusCode == 200) {
-            const data = JSON.parse(body);
-            //console.log("DATA: " + JSON.stringify(data));
-            res.send(data);
-        } else {
-            console.log("ERROR" + error);
-            console.log("RESPONSE" + response);
-            console.log("BODY" + body);
-        }
-    }
+    res.render("news");
 });
 
 app.get("/contact", (req, res) => {
@@ -74,6 +33,38 @@ app.get("/contact", (req, res) => {
 
 app.get("/about", (req, res) => {
     res.render("about");
+});
+
+app.get("/api", (req, res) => {
+    if (!req.query.address) {
+        return res.send({
+            error: "You must provide a search term."
+        });
+    }
+    const authorization = {
+        "User-Agent": "request",
+        "Authorization": `TOKEN ${process.env.TOKEN}`
+    };
+    const url = "";
+    // if ...
+    const options = {
+        url,
+        headers: authorization
+    };
+    
+    request(options, callback);
+    
+    function callback(error, response, body) {
+        if (!error && response.statusCode == 200) {
+            const data = JSON.parse(body);
+            //console.log("DATA: " + JSON.stringify(data));
+            res.send(data);
+        } else {
+            console.log("ERROR" + error);
+            console.log("RESPONSE" + response);
+            console.log("BODY" + body);
+        }
+    }
 });
 
 app.get("*", (req, res) => {
