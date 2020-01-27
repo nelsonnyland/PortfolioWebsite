@@ -1,4 +1,7 @@
-require("dotenv").config();
+const dotenv = require("dotenv").config();
+if (dotenv.error) {
+    console.log(dotenv.parsed);
+}
 
 const path = require("path");
 const express = require("express");
@@ -36,17 +39,20 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/api", (req, res) => {
+    debugger
     if (!req.query.address) {
         return res.send({
             error: "You must provide a search term."
         });
     }
+    
+    const url = req.query.address;
+    
     const authorization = {
         "User-Agent": "request",
         "Authorization": `TOKEN ${process.env.TOKEN}`
     };
-    const url = "";
-    // if ...
+    
     const options = {
         url,
         headers: authorization
@@ -60,9 +66,10 @@ app.get("/api", (req, res) => {
             //console.log("DATA: " + JSON.stringify(data));
             res.send(data);
         } else {
-            console.log("ERROR" + error);
-            console.log("RESPONSE" + response);
-            console.log("BODY" + body);
+            console.log("ERROR: " + error);
+            console.log("RESPONSE: " + response);
+            console.log("BODY: " + body);
+            console.log("TOKEN: " + process.env.TOKEN);
         }
     }
 });
