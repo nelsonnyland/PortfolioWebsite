@@ -1,3 +1,6 @@
+// app.js
+// server-side js
+
 const dotenv = require("dotenv").config();
 if (dotenv.error) {
     console.log(dotenv.parsed);
@@ -39,7 +42,6 @@ app.get("/about", (req, res) => {
 });
 
 app.get("/api", (req, res) => {
-    debugger
     if (!req.query.address) {
         return res.send({
             error: "You must provide a search term."
@@ -63,13 +65,11 @@ app.get("/api", (req, res) => {
     function callback(error, response, body) {
         if (!error && response.statusCode == 200) {
             const data = JSON.parse(body);
-            //console.log("DATA: " + JSON.stringify(data));
             res.send(data);
         } else {
             console.log("ERROR: " + error);
             console.log("RESPONSE: " + response);
             console.log("BODY: " + body);
-            console.log("TOKEN: " + process.env.TOKEN);
         }
     }
 });

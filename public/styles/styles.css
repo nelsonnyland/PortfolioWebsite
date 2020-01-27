@@ -3,9 +3,10 @@
 }
 
 .article {
-    padding-left: 6%;	
-    padding-right: 6%;
-    font-size: 1.5em;
+    padding-top: 1%;
+    padding-right: 20%;
+    padding-left: 5%;	
+    font-size: 1.3em;
 }
 
 .box {
@@ -31,6 +32,10 @@
 #contact a {
     color: black;
     text-decoration: none;
+}
+
+#contact a:hover {
+    color: #3399ff;
 }
 
 #error {
@@ -60,10 +65,18 @@
     font-size: 1.3em;
 }
 
-.img {
+.home-img {
     max-width: 100%;
 }
 
+#profile-img {
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    padding-left: 5%;
+}
 
 .nav {
     display: flex;
@@ -80,6 +93,11 @@
     border-radius: 10%;
 }
 
+.nav li:hover {
+    background-color: #3399ff;
+    cursor: pointer;
+}
+
 .nav a {
     color: white;
     text-decoration: none;
@@ -89,7 +107,6 @@
 .news {	
     padding-left: 5%;	
     padding-right: 5%;	
-    list-style-type: none;	
 }
 
 @media only screen and (max-width: 777px) {
