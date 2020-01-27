@@ -1,2 +1,3 @@
-# PortfolioWebsite
-A website for showing my work.
+[![PortfolioWebsite Image](public/img/portfolio.jpg)](https://nelsonnyland.netlify.com/)
+
+### A NodeJS website for showing my projects.
