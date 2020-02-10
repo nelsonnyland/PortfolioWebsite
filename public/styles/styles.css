@@ -3,10 +3,13 @@
 }
 
 .article {
+    min-width: 20%;
     padding-top: 1%;
-    padding-right: 20%;
+    padding-right: 70%;    
     padding-left: 5%;	
+    text-align: justify;    
     font-size: 1.3em;
+    /* font-weight: bold; */
 }
 
 .box {
@@ -23,6 +26,8 @@
 }
 
 #contact {
+    /* padding-top: 2%; */
+    /* padding: 0; */
     padding-left: 5%;
     list-style-type: none;
     line-height: 2em;
@@ -69,6 +74,31 @@
     max-width: 100%;
 }
 
+.li-child {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 2.6%;
+    list-style-type: none;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+.li-parent {
+    padding-top: 1%;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 2.6%;
+    list-style-type: none;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
 #profile-img {
     display: block;
     max-width: 200px;
@@ -104,9 +134,41 @@
     /* font-weight: bold; */
 }
 
-.news {	
-    padding-right: 5%;	
-    padding-left: 4%;	
+.span {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 5%;
+    margin: 0;
+    font-weight: bold;
+}
+
+.sub-header {	
+    padding-top: 2%;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 5%;
+    margin: 0;  
+}
+
+.ul {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 2.6%;
+    margin: 0;
+    list-style-type: none;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+.ul a {
+    color: black;
+    text-decoration: none;
+}
+
+.ul a:hover {
+    color: #3399ff;
 }
 
 @media only screen and (max-width: 777px) {
