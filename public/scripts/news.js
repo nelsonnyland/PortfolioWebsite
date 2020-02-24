@@ -5,8 +5,8 @@ const url = "https://api.github.com/users/nelsonnyland/events/public";
 let apiStatus = document.getElementById("status");
 let ulNews = document.getElementById("news");
 
-// http://localhost:3000/api?address=https://api.github.com/users/nelsonnyland/events/public
-fetch("http://localhost:3000/api?address=" + url).then((response) => {
+// [base url]/api?address=[api url]
+fetch("/api?address=" + url).then((response) => {
     response.json().then((data) => {
         while (ulNews.firstChild) {
             ulNews.removeChild(ulNews.firstChild);
