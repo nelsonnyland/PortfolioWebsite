@@ -74,11 +74,13 @@ fetch("/api?address=" + url).then((response) => {
                     liTitle.appendChild(aTitle);
                     ulChild.appendChild(liTitle);
 
-                    // create label node
-                    let liLabel = document.createElement("li");
-                    let strLabel = "Label: " + delQuote(JSON.stringify(data[i].payload.issue.labels[0].name));
-                    liLabel.appendChild(document.createTextNode(strLabel));
-                    ulChild.appendChild(liLabel);
+                    if (data[i].payload.issue.labels[0]) {
+                        // create label node
+                        let liLabel = document.createElement("li");
+                        let strLabel = "Label: " + delQuote(JSON.stringify(data[i].payload.issue.labels[0].name));
+                        liLabel.appendChild(document.createTextNode(strLabel));
+                        ulChild.appendChild(liLabel);
+                    }
                 }
                 
                 // append nodes to parent
