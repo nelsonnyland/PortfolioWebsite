@@ -37,9 +37,9 @@
 }
 
 #error {
-    padding: 10%;
-    font-size: 3em;
-    text-align: center;
+    padding-top: 1em;
+    padding-left: 3em;
+    font-size: 2em;
 }
 
 .figcaption {
