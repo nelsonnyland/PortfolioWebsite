@@ -4,10 +4,11 @@
 
 .article {
     width: 12.5em;
-    /* padding-top: 1%; */
+    margin: 0;
     margin-left: 5%;
     margin-right: 70%;
     text-align: justify;
+    text-justify: auto;
 }
 
 .box {
