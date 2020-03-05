@@ -179,6 +179,10 @@
 }
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
+    .article {
+        text-align: left;
+    }
+    
     .figcaption {
         font-size: 0.9em;
     }
