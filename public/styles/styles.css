@@ -4,7 +4,7 @@
 
 .article {
     width: 12.5em;
-    padding-top: 1%;
+    /* padding-top: 1%; */
     margin-left: 5%;
     margin-right: 70%;
     text-align: justify;
@@ -124,6 +124,7 @@
 
 #profile-img {
     padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .span {
@@ -167,9 +168,9 @@
 
 @media only screen and (min-width: 500px) and (max-width: 777px) {
     .article {
-        width: 15.5em;
-        padding-top: 3%;
-        font-size: 0.8em;
+        /* width: 14em; */
+        /* padding-top: 3%; */
+        /* font-size: 0.9em; */
     }
 
     #header {
@@ -184,9 +185,9 @@
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
     .article {
-        width: 15.5em;
-        padding-top: 3%;
-        font-size: 0.8em;
+        /* width: 15.5em; */
+        /* padding-top: 3%; */
+        /* font-size: 0.8em; */
     }
 
     .figcaption {
@@ -200,9 +201,9 @@
 
 @media only screen and (max-width: 400px) {
     .article {
-        width: 15.5em;
-        padding-top: 3%;
-        font-size: 0.8em;
+        /* width: 15.5em; */
+        /* padding-top: 3%; */
+        /* font-size: 0.8em; */
     }
 
     .figcaption {
