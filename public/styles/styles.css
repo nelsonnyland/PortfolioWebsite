@@ -3,11 +3,11 @@
 }
 
 .article {
-    width: 12em;
+    width: 12.5em;
     padding-top: 1%;
     margin-left: 5%;
     margin-right: 70%;
-    text-align: justify;    
+    text-align: justify;
 }
 
 .box {
@@ -167,8 +167,9 @@
 
 @media only screen and (min-width: 500px) and (max-width: 777px) {
     .article {
-        min-width: 14em;
-        font-size: 0.9em;
+        width: 15.5em;
+        padding-top: 3%;
+        font-size: 0.8em;
     }
 
     #header {
@@ -182,6 +183,12 @@
 }
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
+    .article {
+        width: 15.5em;
+        padding-top: 3%;
+        font-size: 0.8em;
+    }
+
     .figcaption {
         font-size: 0.9em;
     }
@@ -192,6 +199,12 @@
 }
 
 @media only screen and (max-width: 400px) {
+    .article {
+        width: 15.5em;
+        padding-top: 3%;
+        font-size: 0.8em;
+    }
+
     .figcaption {
         font-size: 0.7em;
     }
