@@ -168,29 +168,17 @@
 }
 
 @media only screen and (min-width: 500px) and (max-width: 777px) {
-    .article {
-        /* width: 14em; */
-        /* padding-top: 3%; */
-        /* font-size: 0.9em; */
+    .figcaption {
+        font-size: 1.2em;
     }
 
     #header {
         padding-left: 3%;
         font-size: 1em;
     }
-
-    .figcaption {
-        font-size: 1.2em;
-    }
 }
 
 @media only screen and (min-width: 400px) and (max-width: 500px) {
-    .article {
-        /* width: 15.5em; */
-        /* padding-top: 3%; */
-        /* font-size: 0.8em; */
-    }
-
     .figcaption {
         font-size: 0.9em;
     }
@@ -202,11 +190,9 @@
 
 @media only screen and (max-width: 400px) {
     .article {
-        /* width: 15.5em; */
-        /* padding-top: 3%; */
-        /* font-size: 0.8em; */
+        text-align: left;
     }
-
+    
     .figcaption {
         font-size: 0.7em;
     }
