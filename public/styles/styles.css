@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "calibriLight";
+    src: local("Calibri Light"), 
+         url("/public/fonts/calibril.woff") format("woff"),
+         url("/public/fonts/calibril.ttf") format("truetype");
+}
+
 * {
-    font-family: 'Calibri Light','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "calibriLight", Calibri, Arial, sans-serif;
 }
 
 .article {
@@ -69,6 +76,7 @@
 
 .header h1 {
     margin-bottom: 0.5%;
+    font-weight: normal;
 }
 
 .header h1:hover {
