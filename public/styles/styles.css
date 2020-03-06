@@ -58,11 +58,21 @@
 }
 
 .header {
-    padding-top: 0.3%;
+    display: flex;
+    /* align-content: space-around; */
+    padding-top: 0.5%;
     padding-left: 5%;
     font-size: 1.13em;
     cursor: default;
     /* color: #3399ff; */
+}
+
+.header h1 {
+    margin-bottom: 0.5%;
+}
+
+.header h1:hover {
+    color: #3399ff;
 }
 
 .home-img {
