@@ -1,5 +1,7 @@
 @font-face {
     font-family: "calibriLight";
+    font-style: normal;
+    font-weight: normal;
     src: local("Calibri Light"), 
          url("/public/fonts/calibril.woff") format("woff"),
          url("/public/fonts/calibril.ttf") format("truetype");
