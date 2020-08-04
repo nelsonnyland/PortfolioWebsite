@@ -1,10 +1,12 @@
 // news.js
 // client-side js
 
+// http://localhost:3000/api?address=https://api.github.com/users/nelsonnyland/events/public
 const url = "https://api.github.com/users/nelsonnyland/events/public";
 let apiStatus = document.getElementById("status");
 let ulNews = document.getElementById("news");
 
+// https://developer.github.com/v3/
 // [base url]/api?address=[api url]
 fetch("/api?address=" + url).then((response) => {
     response.json().then((data) => {
