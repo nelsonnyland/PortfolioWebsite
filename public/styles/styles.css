@@ -1,14 +1,25 @@
 @font-face {
-    font-family: "calibriLight";
+    font-family: "Agency FB";
     font-style: normal;
     font-weight: normal;
-    src: local("Calibri Light"), 
+    src: local("Agency FB"), 
+         url("AGENCYR.woff") format("woff"),
+         url("AGENCYR.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Calibri Light";
+    font-style: normal;
+    font-weight: lighter;
+    src: local("Calibri"), 
          url("calibril.woff") format("woff"),
          url("calibril.ttf") format("truetype");
 }
 
 * {
-    font-family: "calibriLight", Calibri, Arial, sans-serif;
+    font-family: "Calibri Light", Helvetica, Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
 }
 
 .article {
@@ -46,9 +57,8 @@
 }
 
 #error {
-    padding-top: 1em;
-    padding-left: 3em;
-    font-size: 2em;
+    text-align: center;
+    font-size: 10em;
 }
 
 .figcaption {
@@ -59,7 +69,7 @@
 }
 
 .flex-container {
-    display: flex;
+    display: flex; /* inline-flex */
     flex-wrap: wrap;
     /* flex-flow: wrap; */
     /* justify-content: center; */
@@ -68,21 +78,15 @@
 
 .header {
     display: flex;
-    /* align-content: space-around; */
-    padding-top: 0.5%;
-    padding-left: 5%;
-    font-size: 1.13em;
+    /* align-content: space-evenly; */
     cursor: default;
-    /* color: #3399ff; */
 }
 
-.header h1 {
-    margin-bottom: 0.5%;
-    font-weight: normal;
-}
-
-.header h1:hover {
-    color: #3399ff;
+header a {
+    flex-grow: 1;
+    font-family: "Agency FB";
+    font-size: 1.5em;
+    text-decoration: none;
 }
 
 .home-img {
@@ -119,28 +123,6 @@
     width: auto;
     height: auto;
     padding-left: 5%;
-}
-
-.nav {
-    display: flex;
-    padding-left: 5%;
-    list-style-type: none;
-    align-content: space-around;
-    /* overflow: hidden; */
-}
-
-.nav a {
-    padding: 0.3em; /* 0.3% */
-    margin-right: 0.3em; /* 0.2% */
-    background-color: #737373;
-    border-radius: 10%;
-    color: white;
-    text-decoration: none;
-}
-
-.nav a:hover {
-    background-color: #3399ff;
-    cursor: pointer;
 }
 
 #profile-img {

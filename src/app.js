@@ -30,16 +30,12 @@ app.get("", (req, res) => {
     res.render("index");
 });
 
-app.get("/news", (req, res) => {
-    res.render("news");
+app.get("/work", (req, res) => {
+    res.render("work");
 });
 
-app.get("/contact", (req, res) => {
-    res.render("contact");
-});
-
-app.get("/about", (req, res) => {
-    res.render("about");
+app.get("/info", (req, res) => {
+    res.render("info");
 });
 
 app.get("/api", (req, res) => {

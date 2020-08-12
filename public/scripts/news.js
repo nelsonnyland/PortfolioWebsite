@@ -3,7 +3,7 @@
 
 // http://localhost:3000/api?address=https://api.github.com/users/nelsonnyland/events/public
 const url = "https://api.github.com/users/nelsonnyland/events/public";
-let apiStatus = document.getElementById("status");
+let apiStatus = document.getElementById("news-status");
 let ulNews = document.getElementById("news");
 
 // https://developer.github.com/v3/
@@ -13,9 +13,9 @@ fetch("/api?address=" + url).then((response) => {
         while (ulNews.firstChild) {
             ulNews.removeChild(ulNews.firstChild);
         }
-        apiStatus.textContent = "Loading..."
+        apiStatus.textContent = "Loading news...";
         if (data.error) {
-            apiStatus.textContent = "Error loading page."
+            apiStatus.textContent = "Error loading news. See logs.";
             console.log(data.error);
         } else {
             apiStatus.parentNode.removeChild(apiStatus);
@@ -118,22 +118,19 @@ fetch("/api?address=" + url).then((response) => {
     });
 });
 
+// helper functions
 function delQuote(str) {
     return str.replace(/\"/g, "");
 }
-
 function delParDir(str) {
     return str.substring(str.lastIndexOf("/") + 1);
 }
-
 function addSpace(str) {
     return str.replace(/([a-z])([A-Z])/, '$1 $2');
 }
-
 function corrUrl(str) {
     return str.replace("api.", "").replace("repos/", "");
 }
-
 function parseDate(str) {
     return str.substring(5, 7) + "/" + str.substring(8, 10) + "/" + str.substring(0, 4);
 }

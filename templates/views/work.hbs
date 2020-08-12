@@ -6,25 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.ico" sizes="any" type="image/png">
     <link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css">
-    <title>News</title>
+    <title>Work</title>
 </head>
 <body>
     {{> header }}
     <main>
         <section>
-            {{> nav }}
+            <a href="https://github.com/nelsonnyland?tab=repositories" class="link">
+                <h2 class="sub-header">Repos</h2>
+            </a>
+            <span id="repos-status" class="span"></span>
+            <ul id="repos" class="ul">
+
+            </ul>
         </section>
         <section>
             <a href="https://github.com/nelsonnyland" class="link">
                 <h2 class="sub-header">News</h2>
             </a>
-            <span id="status" class="span"></span>
+            <span id="news-status" class="span"></span>
             <ul id="news" class="ul">
 
             </ul>
         </section>
     </main>
     <footer>
+        <script src="scripts/repos.js"></script>
         <script src="scripts/news.js"></script>
     </footer>
 </body>
