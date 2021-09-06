@@ -1,6 +1,6 @@
 {
   "name": "PortfolioWebsite",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A website for showing my work.",
   "main": "index.js",
   "scripts": {
@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/nelsonnyland/PortfolioWebsite#readme",
   "dependencies": {
-    "dotenv": "^8.2.0",
+    "dotenv": "^8.6.0",
     "express": "^4.17.1",
-    "hbs": "^4.1.1",
+    "hbs": "^4.1.2",
     "request": "^2.88.2"
   }
 }
